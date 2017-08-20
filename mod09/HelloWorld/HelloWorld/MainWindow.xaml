@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="HelloWorld.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <Button Content="Button" HorizontalAlignment="Left" Margin="43,36,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="Button_Click_1">
+            <Button.Width>
+                <System:Double>100</System:Double>
+            </Button.Width>
+            <Button.Height>
+                <System:Double>100</System:Double>
+            </Button.Height>
+            <Button.Margin>
+                <Thickness>359,10,58,209</Thickness>
+            </Button.Margin>
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Texto 1</Label>
+                    <Label>Texto 2</Label>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</Window>
